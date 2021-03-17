@@ -1,0 +1,8 @@
+title Full Stack Open 2021 / Osa 0, harjoitus 6
+
+note left of Selain: Käyttäjä kirjoittaa muistiinpanon kenttään note ja painaa Save-nappia
+note left of Selain: Muistiinpano lisätään muistiinpanot käsittävään listaan (paikallisesti)
+note left of Selain: Listan muistiinpanot kirjoitetaan uudelleen DOMiin ja renderöidään ruudulle
+Selain->Palvelin: HTTPS POST: /exampleapp/new_note_spa Parametrit: content=[muistiinpano]; date=[aikaleima]
+note right of Palvelin: Kenttien content (muistiinpano) ja date (lähetyshetken aikaleima) sisältö tallennetaan
+Palvelin->Selain: Kuittaus onnistuneesta suorituksesta: {"message":"note created"}

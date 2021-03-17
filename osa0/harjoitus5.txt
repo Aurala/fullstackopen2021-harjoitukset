@@ -1,0 +1,12 @@
+title Full Stack Open 2021 / Osa 0, harjoitus 5
+
+Selain->Palvelin: HTTPS GET: /exampleapp/spa
+Palvelin->Selain: HTML-koodi
+Selain->Palvelin: HTTPS GET: /exampleapp/main.css
+Palvelin->Selain: main.css
+Selain->Palvelin: HTTPS GET: /exampleapp/spa.js
+Palvelin->Selain: spa.js
+note left of Selain: Selain suorittaa JavaScript-koodin joka kyselee muistiinpanoja palvelimelta
+Selain->Palvelin: HTTPS GET: /exampleapp/data.json
+Palvelin->Selain: Max 100 viimeisintä muistiinpanoa JSON-muodossa [{content, data}, ...]
+note left of Selain: Selain suorittaa tapahtumankäsittelijän joka renderöi muistiinpanot
